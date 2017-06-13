@@ -5,8 +5,8 @@ using System.Linq;
 public class Class1
 {
     static void Main(string[] args)
-    {
-        Anagrams("cde", "abc");
+    {      
+        Console.WriteLine(Anagrams("cde", "abc"));
     }
 
     static int Anagrams(string a, string b)

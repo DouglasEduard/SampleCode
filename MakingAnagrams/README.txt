@@ -16,3 +16,4 @@ We delete the following characters from our two strings to turn them into anagra
 Remove d and e from cde to get c.
 Remove a and b from abc to get c.
 We must delete characters to make both strings anagrams, so we print on a new line.
+
