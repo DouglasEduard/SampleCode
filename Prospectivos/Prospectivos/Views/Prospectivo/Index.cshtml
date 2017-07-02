@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Prospectivos.Models.Prospectivo>
+
+@{
+    ViewBag.Title = "Prospective registration";
+}
+
+<h2>Prospective list</h2>
+
+<p>
+    @Html.ActionLink("Create", "Create")    
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ProspectivoNome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProspectivoContato)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProspectivoTelefone)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProspectivoNome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProspectivoContato)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProspectivoTelefone)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ProspectivoCod }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ProspectivoCod }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ProspectivoCod })
+        </td>
+    </tr>
+}
+
+</table>

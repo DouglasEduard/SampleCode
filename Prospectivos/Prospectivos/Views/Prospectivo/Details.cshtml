@@ -1,0 +1,89 @@
+﻿@model Prospectivos.Models.Prospectivo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalhes do prospectivo</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ProspectivoNome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProspectivoNome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProspectivoContato)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProspectivoContato)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProspectivoTelefone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProspectivoTelefone)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("New contact", "CreateNewContact", new { id = Model.ProspectivoCod }) |
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProspectivoCod }) |
+    @Html.ActionLink("Return", "Index")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayName("Date")
+        </th>
+        <th>
+            @Html.DisplayName("Content")
+        </th>
+        <th>
+            @Html.DisplayName("School management")
+        </th>
+        <th>
+            @Html.DisplayName("Library")
+        </th>
+        <th>
+            @Html.DisplayName("Free courses")
+        </th>
+        <th>
+            @Html.DisplayName("Collection")
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model.Contatos)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProspectivoContatoData)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProspectivoContatoDetalhes)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProspectivoContatoGestaoEscolas)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProspectivoContatoBiblioteca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProspectivoContatoCursosLivres)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProspectivoContatoAcervo)
+            </td>
+        </tr>
+    }
+</table>

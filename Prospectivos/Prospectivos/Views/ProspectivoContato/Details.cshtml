@@ -1,0 +1,73 @@
+﻿@model Prospectivos.Models.ProspectivoContato
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalhes do Atendimento</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Prospectivo.ProspectivoNome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Prospectivo.ProspectivoNome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProspectivoContatoData)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProspectivoContatoData)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProspectivoContatoDetalhes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProspectivoContatoDetalhes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProspectivoContatoGestaoEscolas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProspectivoContatoGestaoEscolas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProspectivoContatoBiblioteca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProspectivoContatoBiblioteca)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProspectivoContatoCursosLivres)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProspectivoContatoCursosLivres)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProspectivoContatoAcervo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProspectivoContatoAcervo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.ProspectivoContatoId }) |
+    @Html.ActionLink("Voltar", "Index")
+</p>

@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Prospectivos.Models.ProspectivoContato>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Lista de Atendimentos</h2>
+
+<p>
+    @Html.ActionLink("Novo Atendimento", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Prospectivo.ProspectivoNome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProspectivoContatoData)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProspectivoContatoDetalhes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProspectivoContatoGestaoEscolas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProspectivoContatoBiblioteca)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProspectivoContatoCursosLivres)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProspectivoContatoAcervo)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Prospectivo.ProspectivoNome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProspectivoContatoData)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProspectivoContatoDetalhes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProspectivoContatoGestaoEscolas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProspectivoContatoBiblioteca)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProspectivoContatoCursosLivres)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProspectivoContatoAcervo)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.ProspectivoContatoId }) |
+            @Html.ActionLink("Detalhes", "Details", new { id=item.ProspectivoContatoId }) |
+            @Html.ActionLink("Apagar", "Delete", new { id=item.ProspectivoContatoId })
+        </td>
+    </tr>
+}
+
+</table>
