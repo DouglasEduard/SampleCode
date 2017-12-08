@@ -95,6 +95,8 @@ namespace Vidly2.Controllers
                 MembershipTypeId = customer.MembershipTypeId
             };
 
+            viewModel.Operation = "Edit";
+
             return View("CustomerForm", viewModel);
         }
     }

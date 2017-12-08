@@ -15,6 +15,7 @@ namespace Vidly2.Models
         public string Name { get; set; }
 
         public Genre Genre { get; set; }
+        public int GenreId { get; set; }
 
         public Nullable<DateTime> ReleaseDate { get; set; }
         public Nullable<DateTime> AddedDate { get; set; }

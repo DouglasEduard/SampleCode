@@ -24,5 +24,7 @@ namespace Vidly2.ViewModels
         public Nullable<DateTime> Birthdate { get; set; }
 
         public IEnumerable<MembershipType> MembershipTypes { get; set; }
+
+        public string Operation { get; set; }
     }
 }

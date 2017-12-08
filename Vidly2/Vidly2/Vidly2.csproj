@@ -244,6 +244,10 @@
     <Compile Include="Migrations\201711230204170_NewMovieFields.Designer.cs">
       <DependentUpon>201711230204170_NewMovieFields.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201712072358016_UpdateMovieModel.cs" />
+    <Compile Include="Migrations\201712072358016_UpdateMovieModel.Designer.cs">
+      <DependentUpon>201712072358016_UpdateMovieModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -322,6 +326,7 @@
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Movies\Details.cshtml" />
     <Content Include="Views\Customers\CustomerForm.cshtml" />
+    <Content Include="Views\Movies\MovieForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -377,6 +382,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201711230204170_NewMovieFields.resx">
       <DependentUpon>201711230204170_NewMovieFields.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712072358016_UpdateMovieModel.resx">
+      <DependentUpon>201712072358016_UpdateMovieModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
