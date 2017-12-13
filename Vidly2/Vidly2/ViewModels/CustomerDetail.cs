@@ -11,6 +11,8 @@ namespace Vidly2.ViewModels
     {
         public int Id { get; set; }
 
+        [Required(ErrorMessage = "Please enter customer's name!")]
+        [StringLength(255)]
         public string Name { get; set; }
 
         public string MembershipType { get; set; }
@@ -21,6 +23,7 @@ namespace Vidly2.ViewModels
         public bool IsSubscribedToNewsLetter { get; set; }
 
         [Display(Name = "Birth of Date")]
+        [Min18yearsifAMember]
         public Nullable<DateTime> Birthdate { get; set; }
 
         public IEnumerable<MembershipType> MembershipTypes { get; set; }
