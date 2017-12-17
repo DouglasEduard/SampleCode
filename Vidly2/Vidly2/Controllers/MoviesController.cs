@@ -40,19 +40,25 @@ namespace Vidly2.Controllers
             if (movie == null)
                 return HttpNotFound();
 
-            MovieDetail ResultView = new MovieDetail();
-            ResultView.Name = movie.Name;
-            ResultView.Genre = movie.Genre.Description;
-            ResultView.ReleaseDate = movie.ReleaseDate == null ? "" : String.Format("{0:dddd, MMMM d, yyyy}", movie.ReleaseDate);
-            ResultView.AddedDate = movie.ReleaseDate == null ? "" : String.Format("{0:dddd, MMMM d, yyyy}", movie.AddedDate);
-            ResultView.NumberInStock = movie.NumberInStock;
+            MovieDetail ResultView = new MovieDetail(movie);
 
             return View(ResultView);
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Save(Movie movie)
         {
+            if (!ModelState.IsValid)
+            {
+                var viewModel = new MovieDetail(movie)
+                {
+                    GenreList = _context.Genres.ToList()
+                };
+
+                return View("MovieForm", viewModel);
+            }
+
             try
             {
                 if (movie.Id == 0)

@@ -10,8 +10,6 @@ namespace Vidly2.Models
     {
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
-            //return base.IsValid(value, validationContext);
-
             var customer = (Customer)validationContext.ObjectInstance;
 
             if ((customer.MembershipTypeId == MembershipType.Unknown) || 
