@@ -19,7 +19,7 @@ namespace Vidly2.DTOs
 
         public bool IsSubscribedToNewsLetter { get; set; }
 
-        [Min18yearsifAMember]
+        //[Min18yearsifAMember]
         public Nullable<DateTime> Birthdate { get; set; }
 
         public string Operation { get; set; }
