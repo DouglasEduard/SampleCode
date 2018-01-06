@@ -29,6 +29,9 @@ namespace Vidly2.Controllers
             var movie =
                 _context.Movies.Include(c => c.Genre).ToList();
 
+            //if (User.IsInRole(RoleName.CanManageMovies))
+            //    return View(movie);
+
             return View(movie);
         }
 

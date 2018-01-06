@@ -86,6 +86,11 @@ namespace Vidly2
             }
             return manager;
         }
+
+        internal Task Add(object id, string v)
+        {
+            throw new NotImplementedException();
+        }
     }
 
     // Configure o gerenciador de login do aplicativo que é usado neste aplicativo.
