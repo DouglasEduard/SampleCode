@@ -21,5 +21,6 @@ namespace Vidly2.Models
         public Nullable<DateTime> ReleaseDate { get; set; }
         public Nullable<DateTime> AddedDate { get; set; }
         public int NumberInStock { get; set; }
+        public byte NumberAvailable { get; set; }
     }
 }

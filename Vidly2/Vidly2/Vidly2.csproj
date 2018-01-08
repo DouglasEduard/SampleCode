@@ -221,6 +221,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\Api\CustomersController.cs" />
     <Compile Include="Controllers\Api\MoviesController.cs" />
+    <Compile Include="Controllers\Api\NewRentalsController.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -229,6 +230,7 @@
     <Compile Include="DTOs\GenreDto.cs" />
     <Compile Include="DTOs\MembershipTypeDto.cs" />
     <Compile Include="DTOs\MovieDto.cs" />
+    <Compile Include="DTOs\NewRentalDto.cs" />
     <Compile Include="GlimpseSecurityPolicy.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -293,6 +295,14 @@
     <Compile Include="Migrations\201801062133107_AddDrivingLicenseToApplicationUser.Designer.cs">
       <DependentUpon>201801062133107_AddDrivingLicenseToApplicationUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201801080031108_AddRentalsTable.cs" />
+    <Compile Include="Migrations\201801080031108_AddRentalsTable.Designer.cs">
+      <DependentUpon>201801080031108_AddRentalsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801080058014_MovieNumberAvailable.cs" />
+    <Compile Include="Migrations\201801080058014_MovieNumberAvailable.Designer.cs">
+      <DependentUpon>201801080058014_MovieNumberAvailable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -302,6 +312,7 @@
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Min18yearsifAMember.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\Rental.cs" />
     <Compile Include="Models\RoleName.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -614,6 +625,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201801062133107_AddDrivingLicenseToApplicationUser.resx">
       <DependentUpon>201801062133107_AddDrivingLicenseToApplicationUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801080031108_AddRentalsTable.resx">
+      <DependentUpon>201801080031108_AddRentalsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801080058014_MovieNumberAvailable.resx">
+      <DependentUpon>201801080058014_MovieNumberAvailable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
