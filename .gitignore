@@ -3,3 +3,45 @@ Vidly2/Vidly2/obj/
 Vidly2/Vidly2/bin/
 Vidly2/Vidly2/App_Data/
 Vidly2/.vs/
+
+# compiled output
+/dist
+/dist-server
+/tmp
+/out-tsc
+
+# dependencies
+/node_modules
+
+# IDEs and editors
+Vidly2/HelloAngular/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+Vidly2/HelloAngular/.sass-cache
+Vidly2/HelloAngular/connect.lock
+Vidly2/HelloAngular/coverage
+Vidly2/HelloAngular/libpeerconnection.log
+npm-debug.log
+testem.log
+Vidly2/HelloAngular/typings
+
+# e2e
+/e2e/*.js
+/e2e/*.map
+
+# System Files
+.DS_Store
+Thumbs.db
