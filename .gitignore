@@ -3,6 +3,7 @@ Vidly2/Vidly2/obj/
 Vidly2/Vidly2/bin/
 Vidly2/Vidly2/App_Data/
 Vidly2/.vs/
+HelloAngular4/node_modules/
 
 # compiled output
 /dist
@@ -30,10 +31,10 @@ Vidly2/HelloAngular/.idea
 !.vscode/extensions.json
 
 # misc
-Vidly2/HelloAngular/.sass-cache
-Vidly2/HelloAngular/connect.lock
-Vidly2/HelloAngular/coverage
-Vidly2/HelloAngular/libpeerconnection.log
+Vidly2/HelloAngular4/.sass-cache
+Vidly2/HelloAngular4/connect.lock
+Vidly2/HelloAngular4/coverage
+Vidly2/HelloAngular4/libpeerconnection.log
 npm-debug.log
 testem.log
 Vidly2/HelloAngular/typings
