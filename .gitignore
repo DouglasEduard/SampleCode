@@ -4,6 +4,7 @@ Vidly2/Vidly2/bin/
 Vidly2/Vidly2/App_Data/
 Vidly2/.vs/
 HelloAngular4/node_modules/
+HelloAngular4/.vscode/
 
 # compiled output
 /dist
